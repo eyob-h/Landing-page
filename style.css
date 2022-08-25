@@ -19,10 +19,7 @@
     font-weight: 800;
     font-size: 24px;
   }
-  
-  .links{
-  
-  }
+
   a{
     text-decoration: none;
     font-size: 20px;
@@ -37,6 +34,33 @@
   .hero-section{
     background-color: #1f2937;
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
-  
+.text{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 15px;
+
+}
+h1{
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+p{
+  font-size: 18px;
+  color: #e5e7eb;
+
+}
+  button{
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    /* align-self: center; */
+  }
   
