@@ -1,25 +1,30 @@
 *{
-    box-sizing: border-box;
-    padding:0;
-    margin:0;
-    font-family: Roboto;
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  font-family: Roboto;
+}
+
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #f9faf8;
   }
-  .image{
-    height: 300px;
-    width: 500px;
-    background-image: url(./images/astronaut-g17d8643d1_1280.jpg);
-    background-size: cover;
-    background-position: center;
-    box-shadow: rgba(255, 251, 251, 0.2) 0px 18px 50px -10px;
-    
+  ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
   }
-  
+
+  /*Navbar section  */
   .nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #1f2a3745;
-    
+    position: fixed;
+    top:0;
+    width: 100vw;    
     background-image: url(./images/stars.jpg);
     background-size: cover;
     /* background-position: center; */
@@ -32,31 +37,31 @@
     font-weight: 800;
     font-size: 24px;
   }
-
-  a{
-    text-decoration: none;
-    font-size: 20px;
-    color: #f9faf8;
-  }
-  ul{
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-  }
   
+  /* Hero Section */
   .hero-section{
     /* background-color: #1f2937; */
     background-image: url(./images/stars.jpg);
     background-size: cover;
     background-position: center;
-
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
   }
-.text{
+
+  .image{
+    height: 300px;
+    width: 500px;
+    background-image: url(./images/astronaut-g17d8643d1_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(255, 251, 251, 0.2) 0px 18px 50px -10px;
+    flex: 0 1 auto;
+    
+  }
+  .text{
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -87,6 +92,8 @@ h1{
     outline: none;
 
   }
+
+  /* Information Section */
   .info-section{
     padding: 50px;
     display: flex;
@@ -108,8 +115,8 @@ h1{
     /* flex-direction: column; */
     justify-content: space-around;
     align-items: center;
-    height: 300px;
-    width: 400px;
+    height: 350px;
+    width: 450px;
   }
   .info-text p{
     text-align: center;
@@ -118,8 +125,8 @@ h1{
   
   .image-container{
     background-color: green;
-    height: 150px;
-    width: 150px;
+    height: 210px;
+    width: 210px;
     border-radius: 10%;
     margin-bottom: 15px;
     
@@ -152,6 +159,7 @@ h1{
     
   }
  
+  /* Quote Section */
   
   .quote-section{
     background-color: #e5e7eb;
@@ -161,6 +169,7 @@ h1{
     justify-content: center;
     padding: 100px;
   }
+
   .quote-container{
     display: flex;
     flex-direction: column;
@@ -171,6 +180,7 @@ h1{
     
 }
 
+
   .author{
     align-self: flex-end;
   }
@@ -180,10 +190,12 @@ h1{
     font-style:italic;
     font-weight:lighter;
   }
+
   .call-to-action-section{
     display: flex;
     justify-content: center;
   }
+
   .blue-card{
     background-color: #3882f6;
     width: 65vw;
@@ -194,13 +206,17 @@ h1{
     justify-content: space-around;
     align-items: center;
   }
+
   .text{
       color: #f9faf8;
   }
+
   .blue-card button{
     border: 2px solid #f9faf8;
-    
   }
+
+
+  /* Footer Section */
   footer{
     background-color: #1f2937;
     color: #f9faf8;
@@ -208,5 +224,5 @@ h1{
     text-align: center;
     height: 10vh;
     padding: 25px;
-    margin-bottom: auto;
+    margin-top: auto;
   }
