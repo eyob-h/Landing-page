@@ -13,7 +13,7 @@
   ul{
     list-style-type: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
   }
 
   /*Navbar section  */
@@ -25,12 +25,13 @@
     position: fixed;
     top:0;
     width: 100vw;    
-    height: 8vh;
+    min-height: 8vh;
     background-image: url(./images/stars.jpg);
     background-size: cover;
     /* background-position: center; */
     color: #f9faf8;
     padding: 16px;
+    flex-wrap: wrap;
     
   }
   
@@ -42,14 +43,16 @@
   /* Hero Section */
   .hero-section{
     /* background-color: #1f2937; */
+    padding: 10vh;
     background-image: url(./images/stars.jpg);
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    flex-wrap: wrap;
   }
 
   .image{
