@@ -4,6 +4,15 @@
     margin:0;
     font-family: Roboto;
   }
+  .image{
+    height: 300px;
+    width: 500px;
+    background-image: url(./images/astronaut-g17d8643d1_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(255, 251, 251, 0.2) 0px 18px 50px -10px;
+    
+  }
   
   .nav-bar{
     display: flex;
@@ -72,6 +81,8 @@ h1{
     /* align-self: center; */
     background-color: #3882f6;
     color:#f9faf8;
+    font-weight: bold;
+    font-size: 16px;
     border:none;
     outline: none;
 
@@ -140,9 +151,7 @@ h1{
     text-align: center;
     
   }
-  footer{
-    height: 100vh;
-  }
+ 
   
   .quote-section{
     background-color: #e5e7eb;
@@ -170,4 +179,34 @@ h1{
     color: #1f2937;
     font-style:italic;
     font-weight:lighter;
+  }
+  .call-to-action-section{
+    display: flex;
+    justify-content: center;
+  }
+  .blue-card{
+    background-color: #3882f6;
+    width: 65vw;
+    border-radius: 10px;
+    margin: 80px;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .text{
+      color: #f9faf8;
+  }
+  .blue-card button{
+    border: 2px solid #f9faf8;
+    
+  }
+  footer{
+    background-color: #1f2937;
+    color: #f9faf8;
+    font-size: 16px;
+    text-align: center;
+    height: 10vh;
+    padding: 25px;
+    margin-bottom: auto;
   }
