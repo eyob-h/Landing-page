@@ -25,6 +25,7 @@
     position: fixed;
     top:0;
     width: 100vw;    
+    height: 8vh;
     background-image: url(./images/stars.jpg);
     background-size: cover;
     /* background-position: center; */
@@ -68,7 +69,7 @@
   gap: 15px;
 
 }
-h1{
+.hero-section h1{
   font-size: 48px;
   font-weight: 900;
   color: #f9faf8;
@@ -79,8 +80,8 @@ h1{
 
 }
   button{
-    width: 100px;
-    height: 40px;
+    width: 130px;
+    min-height: 40px;
     padding: 10px;
     border-radius: 8px;
     /* align-self: center; */
@@ -90,7 +91,13 @@ h1{
     font-size: 16px;
     border:none;
     outline: none;
-
+    
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: #0048bd;
+    color:#f1ffff;
+    
   }
 
   /* Information Section */
@@ -100,6 +107,7 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: auto;
   }
   .info-section h2{
     color: #1f2937;
@@ -115,8 +123,9 @@ h1{
     /* flex-direction: column; */
     justify-content: space-around;
     align-items: center;
-    height: 350px;
-    width: 450px;
+    height: auto;
+    /* width: 450px; */
+    flex-wrap: wrap;
   }
   .info-text p{
     text-align: center;
@@ -124,7 +133,7 @@ h1{
   }
   
   .image-container{
-    background-color: green;
+    background-color: rgb(16, 16, 16);
     height: 210px;
     width: 210px;
     border-radius: 10%;
@@ -133,7 +142,9 @@ h1{
     background-size: cover;
     background-position: center;
     box-shadow: 5px 5px 10px rgb(196, 196, 196);
+    
   }
+
 .image-container.one{
   /* background-image: none; */
   background-image: url(./images/9.jpg);
@@ -156,6 +167,9 @@ h1{
     /* background-color: rgb(234, 166, 166); */
     margin: 5px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
   }
  
@@ -163,7 +177,7 @@ h1{
   
   .quote-section{
     background-color: #e5e7eb;
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
